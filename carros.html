@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Carros ITECH CORPORATION</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    margin: 20px;
+    padding: 0;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #25D366;
+  }
+  .carros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .carro {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  .carro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.2);
+  }
+  .carro img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #25D366;
+  }
+  .carro h3 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+    color: #111;
+  }
+  .carro p {
+    color: #25D366;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  .carro button {
+    background-color: #25D366;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .carro button:hover {
+    background-color: #1ebe56;
+  }
+</style>
+</head>
+<body>
+
+<h1>Carros à Venda - ITEC MÓVEL</h1>
+
+<div class="carros-container">
+
+  <div class="carro">
+    <img src="2photos/suzuki alto.png" alt="Suzuki Alto" />
+    <h3>Suzuki Alto</h3>
+    <p>Preço: 8.000.000 Kz</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="carro">
+    <img src="2photos/expresso.png" alt="Suzuki Expresso" />
+    <h3>Suzuki Expresso</h3>
+    <p>Preço: 9.000.000 Kz</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="carro">
+    <img src="2photos/toyota hilux.jpg" alt="Toyota Hilux" />
+    <h3>Toyota Hilux</h3>
+    <p>Preço: 43.000.000 Kz</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="carro">
+    <img src="2photos/jetour x70.jpg" alt="Jetour X70" />
+    <h3>Jetour X70 Coupé Full</h3>
+    <p>Preço: 17.000.000 Kz</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="carro">
+    <img src="2photos/crusier.png" alt="Toyota Land Cruiser Executivo" />
+    <h3>Toyota Land Cruiser Executivo 2022</h3>
+    <p>Preço: 38.900.000 Kz</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="carro">
+    <img src="2photos/suzuki swift.jpg" alt="Suzuki Swift Full Option" />
+    <h3>Suzuki Swift Full Option</h3>
+    <p>Preço: 12.950.000 Kz</p>
+    <button>Comprar</button>
+  </div>
+
+</div>
+
+</body>
+</html>
