@@ -360,5 +360,255 @@ body {
     
     .car-grid {
         grid-template-columns: 1fr;
+   /* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTAINER */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* HEADER */
+
+.header{
+background:#111;
+color:white;
+padding:15px 0;
+}
+
+.header .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h1{
+font-size:22px;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.nav a:hover{
+color:#25D366;
+}
+
+/* BANNER */
+
+.banner{
+height:400px;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.banner h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.banner p{
+margin-bottom:20px;
+}
+
+/* BOTÕES */
+
+.btn{
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+}
+
+.btn-primary{
+background:#25D366;
+color:white;
+}
+
+.btn-secondary{
+background:#111;
+color:white;
+margin-top:10px;
+}
+
+.btn:hover{
+opacity:0.9;
+}
+
+/* FILTROS */
+
+.filtros{
+padding:40px 0;
+background:#f4f4f4;
+text-align:center;
+}
+
+.filtro-opcoes a{
+margin:10px;
+padding:10px 20px;
+background:#ddd;
+text-decoration:none;
+border-radius:5px;
+color:#333;
+}
+
+.filtro-opcoes a.active{
+background:#25D366;
+color:white;
+}
+
+/* ESTOQUE */
+
+.estoque{
+padding:50px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:28px;
+}
+
+/* GRID CARROS */
+
+.car-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* CARD CARRO */
+
+.car-card{
+background:white;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.car-card:hover{
+transform:translateY(-5px);
+}
+
+.car-image{
+position:relative;
+}
+
+.car-image img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.badge{
+position:absolute;
+top:10px;
+left:10px;
+padding:5px 10px;
+color:white;
+border-radius:4px;
+font-size:12px;
+}
+
+.badge-new{
+background:#28a745;
+}
+
+.badge-used{
+background:#ff9800;
+}
+
+.car-info{
+padding:15px;
+}
+
+.car-info h3{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.car-price{
+color:#25D366;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.car-details{
+display:flex;
+justify-content:space-between;
+font-size:14px;
+margin-bottom:10px;
+color:#555;
+}
+
+/* FOOTER */
+
+.footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* BOTÃO WHATSAPP */
+
+.whatsapp-button{
+position:fixed;
+width:65px;
+height:65px;
+bottom:25px;
+right:25px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.3);
+z-index:999;
+animation:pulse 1.5s infinite;
+}
+
+.whatsapp-button img{
+width:35px;
+}
+
+@keyframes pulse{
+
+0%{
+box-shadow:0 0 0 0 rgba(37,211,102,0.7);
+}
+
+70%{
+box-shadow:0 0 0 15px rgba(37,211,102,0);
+}
+
+100%{
+box-shadow:0 0 0 0 rgba(37,211,102,0);
+}
+
+}
     }
+   
+
 }
